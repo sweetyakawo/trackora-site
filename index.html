@@ -2,162 +2,186 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Trackora</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trackora - Smart Business Tools</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    * {
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f9f9f9;
+    }
+
+    body {
+      background: #f8f4fc;
       color: #333;
+      line-height: 1.6;
+      padding: 0 20px;
     }
+
     header {
-      background-color: #d8b4fe;
-      padding: 30px 20px;
       text-align: center;
+      padding: 30px 0;
+      background: linear-gradient(to right, #d7b4f3, #f1d9ff);
     }
-    header h1 {
-      margin: 0;
-      color: #4b0082;
-      font-size: 28px;
-    }
-    .hero {
-      background: #ede9fe;
-      text-align: center;
-      padding: 40px 20px;
-    }
-    .hero h2 {
-      font-size: 24px;
+
+    header img {
+      height: 60px;
       margin-bottom: 10px;
     }
+
+    header h1 {
+      font-size: 2rem;
+      color: #5c258d;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 30px 0;
+    }
+
+    .hero h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
     .hero p {
-      font-size: 16px;
       margin-bottom: 20px;
     }
-    .hero .button {
-      background-color: #dc2626;
+
+    .cta {
+      background: #ff4d4d;
       color: white;
-      padding: 12px 20px;
+      padding: 12px 24px;
       border: none;
-      border-radius: 5px;
+      border-radius: 6px;
       text-decoration: none;
       font-weight: bold;
     }
-    .features {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      margin: 30px auto;
-      max-width: 1000px;
-      padding: 0 20px;
-    }
-    .feature-box {
-      background: #fff7ed;
-      border: 1px solid #facc15;
-      border-radius: 10px;
-      padding: 20px;
-      margin: 10px;
-      flex: 1;
-      min-width: 250px;
-      max-width: 300px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    }
-    .feature-box h3 {
-      color: #4c1d95;
-      margin-top: 0;
-    }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-    }
+
     .section {
+      margin: 40px 0;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .card {
       background: white;
       border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-      padding: 30px;
-      margin-bottom: 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      flex: 1 1 300px;
+      max-width: 300px;
     }
-    .section h2 {
-      color: #6b21a8;
+
+    .card h3 {
+      color: #5c258d;
+      margin-bottom: 10px;
     }
-    .button {
-      background-color: #dc2626;
+
+    .card p {
+      font-size: 0.95rem;
+    }
+
+    .training-section {
+      background: #f4e7ff;
+      border-left: 5px solid #c084fc;
+      padding: 20px;
+      margin: 30px 0;
+      border-radius: 8px;
+    }
+
+    .training-section h3 {
+      color: #5c258d;
+      margin-bottom: 10px;
+    }
+
+    .training-section ul {
+      margin-left: 20px;
+    }
+
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
       color: white;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 5px;
+      padding: 12px 16px;
+      border-radius: 50px;
       text-decoration: none;
-      display: inline-block;
-      margin-top: 20px;
+      font-weight: bold;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
     }
-    ul {
-      line-height: 1.8;
+
+    footer {
+      text-align: center;
+      margin: 40px 0 20px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Trackora</h1>
-  </header>
 
-  <div class="hero">
-    <h2>Automate Sales, Inventory, and Expiry Tracking</h2>
-    <p>Trackora helps you simplify your business operations with smart tools and training.</p>
-    <a href="https://wa.me/2347061386314" class="button">Join Training</a>
-  </div>
+<header>
+  <img src="https://via.placeholder.com/150x60?text=Trackora+Logo" alt="Trackora Logo" />
+  <h1>Trackora - Smart Business Tools</h1>
+</header>
 
-  <div class="features">
-    <div class="feature-box">
+<section class="hero">
+  <h2>Automate Sales, Inventory, and Expiry Tracking</h2>
+  <p>Trackora helps you simplify your business operations with smart tools and training.</p>
+  <a href="https://wa.me/234706136314" class="cta">Join Training</a>
+</section>
+
+<section class="section">
+  <div class="cards">
+    <div class="card">
       <h3>Expiry Date Alerts</h3>
       <p>Get automatic reminders 90 days before products expire — reduce waste and save costs.</p>
     </div>
-    <div class="feature-box">
+    <div class="card">
       <h3>Stocktaking Services</h3>
       <p>Let us handle your physical stocktaking so you can focus on selling and scaling.</p>
     </div>
-    <div class="feature-box">
+    <div class="card">
       <h3>Smart Sales Tracking</h3>
       <p>Learn how to track your sales and inventory using automated Google Sheets.</p>
     </div>
   </div>
+</section>
 
-  <div class="container">
-    <div class="section">
-      <h2>Training Program</h2>
-      <p>Our training program is designed for business owners who want to learn practical, real-world skills to work less, earn more, and grow their business with clarity.</p>
-      <h3>Module 1: Business Foundations</h3>
-      <ul>
-        <li>Separate personal and business money</li>
-        <li>Track expenses like a pro</li>
-      </ul>
-      <h3>Module 2: Inventory & Sales Mastery</h3>
-      <ul>
-        <li>Automate sales and stock tracking</li>
-        <li>Track expiry dates with 90-day alerts</li>
-        <li>Stress-free stocktaking techniques</li>
-      </ul>
-      <h3>Module 3: Growth Through Data</h3>
-      <ul>
-        <li>Build and use your customer database</li>
-        <li>Make data-driven decisions</li>
-      </ul>
-      <h3>Module 4: Smart Branding With AI</h3>
-      <ul>
-        <li>Grow your brand with simple AI tools</li>
-        <li>Create content that attracts real customers</li>
-      </ul>
-      <p><strong>Bonus:</strong> Templates, Live Q&A, and Certificate of Completion</p>
-      <a href="https://wa.me/2347061386314" class="button">Register for Training</a>
-    </div>
+<section class="training-section">
+  <h3>What You’ll Learn in Our Business Training:</h3>
+  <ul>
+    <li>How to automate your sales and inventory</li>
+    <li>How to track expiry dates and receive alerts</li>
+    <li>How to separate business from personal finance</li>
+    <li>How to track expenses and know your profit</li>
+    <li>How to grow using customer database</li>
+    <li>How to use AI to strengthen your brand</li>
+  </ul>
+  <br>
+  <a href="https://wa.me/2347061386314" class="cta">Register Now</a>
+</section>
 
-    <div class="section">
-      <h2>What Our Clients Are Saying</h2>
-      <p><strong>Health RX:</strong> “Trackora helped us cut down drastically on losses from expired drugs. Our inventory and sales systems are now fully automated and stress-free.”</p>
-      <p><strong>Cass Pharmacy:</strong> “With Trackora’s warehouse automation, tracking products in and out is now seamless. Our stock management has never been this smooth.”</p>
-      <p><strong>Dumjos:</strong> “No more inventory loss! With real-time updates and instant access to sales reports from anywhere, our operations have become much more efficient.”</p>
-    </div>
-  </div>
+<a class="whatsapp-btn" href="https://wa.me/2347061386314">Chat on WhatsApp</a>
+
+<footer>
+  &copy; 2025 Trackora. All rights reserved.
+</footer>
+
 </body>
 </html>
