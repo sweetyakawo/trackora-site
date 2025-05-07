@@ -1,158 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trackora | Smart Business Training</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trackora - Smart Business Tools</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
   <style>
-    body {
+    * {
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f9f6fb;
+      padding: 0;
+    }
+
+    body {
+      background: #f8f4fc;
       color: #333;
       line-height: 1.6;
+      padding: 0 20px;
     }
 
     header {
-      background-color: #c8a2c8;
-      color: white;
-      padding: 40px 20px;
       text-align: center;
+      padding: 30px 0;
+      background: linear-gradient(to right, #d7b4f3, #f1d9ff);
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 2em;
-    }
-
-    header p {
-      font-size: 1.2em;
-      margin-top: 10px;
-    }
-
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    .training-title, .services-title {
-      color: #b84a4a;
-      font-size: 1.8em;
+    header img {
+      height: 60px;
       margin-bottom: 10px;
     }
 
-    h3 {
-      color: #6a1b9a;
-      margin-top: 30px;
+    header h1 {
+      font-size: 2rem;
+      color: #5c258d;
     }
 
-    ul {
-      list-style: none;
-      padding-left: 0;
+    .hero {
+      text-align: center;
+      padding: 30px 0;
     }
 
-    ul li::before {
-      content: "\2022";
-      color: #c8a2c8;
-      font-weight: bold;
-      display: inline-block;
-      width: 1em;
-      margin-left: -1em;
+    .hero h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
     }
 
-    .cta-button {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 15px 25px;
-      background-color: #e53935;
+    .hero p {
+      margin-bottom: 20px;
+    }
+
+    .cta {
+      background: #ff4d4d;
       color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
       text-decoration: none;
-      border-radius: 5px;
       font-weight: bold;
     }
 
-    .cta-button:hover {
-      background-color: #c62828;
+    .section {
+      margin: 40px 0;
     }
 
-    .service-box {
-      background-color: #fff;
-      border-left: 5px solid #c8a2c8;
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       padding: 20px;
-      margin: 20px 0;
-      border-radius: 6px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      flex: 1 1 300px;
+      max-width: 300px;
     }
 
-    .service-box h4 {
-      margin: 0 0 10px;
-      color: #6a1b9a;
+    .card h3 {
+      color: #5c258d;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+    }
+
+    .training-section {
+      background: #f4e7ff;
+      border-left: 5px solid #c084fc;
+      padding: 20px;
+      margin: 30px 0;
+      border-radius: 8px;
+    }
+
+    .training-section h3 {
+      color: #5c258d;
+      margin-bottom: 10px;
+    }
+
+    .training-section ul {
+      margin-left: 20px;
+    }
+
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      padding: 12px 16px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
+
+    footer {
+      text-align: center;
+      margin: 40px 0 20px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Trackora</h1>
-    <p>Smart tracking for inventory, sales, and expiry dates</p>
-  </header>
 
-  <section>
-    <h2 class="training-title">Trackora Business Training</h2>
-    <p>Learn practical, real-world skills to work less, earn more, and grow with clarity.</p>
+<header>
+  <img src="https://via.placeholder.com/150x60?text=Trackora+Logo" alt="Trackora Logo" />
+  <h1>Trackora - Smart Business Tools</h1>
+</header>
 
-    <h3>Module 1: Business Foundations</h3>
-    <ul>
-      <li>Separate personal and business money</li>
-      <li>Track expenses like a pro</li>
-    </ul>
+<section class="hero">
+  <h2>Automate Sales, Inventory, and Expiry Tracking</h2>
+  <p>Trackora helps you simplify your business operations with smart tools and training.</p>
+  <a href="https://wa.me/234XXXXXXXXXX" class="cta">Join Training</a>
+</section>
 
-    <h3>Module 2: Inventory & Sales Mastery</h3>
-    <ul>
-      <li>Automate sales and stock tracking</li>
-      <li>Track expiry dates with 90-day alerts</li>
-      <li>Stress-free stocktaking techniques</li>
-    </ul>
-
-    <h3>Module 3: Growth Through Data</h3>
-    <ul>
-      <li>Build and use your customer database</li>
-      <li>Make data-driven decisions</li>
-    </ul>
-
-    <h3>Module 4: Smart Branding With AI</h3>
-    <ul>
-      <li>Grow your brand with simple AI tools</li>
-      <li>Create content that attracts real customers</li>
-    </ul>
-
-    <p><strong>Bonus:</strong> Templates, Live Q&A, and Certificate of Completion</p>
-    <a href="#" class="cta-button">Register Now</a>
-  </section>
-
-  <section>
-    <h2 class="services-title">Our Services</h2>
-    <div class="service-box">
-      <h4>Expiry Date Tracking Setup</h4>
-      <p>We help you set up a system that alerts you before products expire—so you never lose money again.</p>
+<section class="section">
+  <div class="cards">
+    <div class="card">
+      <h3>Expiry Date Alerts</h3>
+      <p>Get automatic reminders 90 days before products expire — reduce waste and save costs.</p>
     </div>
-
-    <div class="service-box">
-      <h4>Sales & Inventory Setup</h4>
-      <p>Let us set up your sales and inventory tracking—organized, automated, and stress-free.</p>
+    <div class="card">
+      <h3>Stocktaking Services</h3>
+      <p>Let us handle your physical stocktaking so you can focus on selling and scaling.</p>
     </div>
-
-    <div class="service-box">
-      <h4>Stocktaking Services</h4>
-      <p>We handle your physical stock count and reconcile your records accurately, saving you time and confusion.</p>
+    <div class="card">
+      <h3>Smart Sales Tracking</h3>
+      <p>Learn how to track your sales and inventory using automated Google Sheets.</p>
     </div>
+  </div>
+</section>
 
-    <div class="service-box">
-      <h4>One-on-One Business Coaching</h4>
-      <p>Get personalized advice on how to automate, grow, and manage your business with confidence.</p>
-    </div>
+<section class="training-section">
+  <h3>What You’ll Learn in Our Business Training:</h3>
+  <ul>
+    <li>How to automate your sales and inventory</li>
+    <li>How to track expiry dates and receive alerts</li>
+    <li>How to separate business from personal finance</li>
+    <li>How to track expenses and know your profit</li>
+    <li>How to grow using customer database</li>
+    <li>How to use AI to strengthen your brand</li>
+  </ul>
+  <br>
+  <a href="https://wa.me/2347061386314" class="cta">Register Now</a>
+</section>
 
-    <a href="#" class="cta-button">Request a Service</a>
-  </section>
+<a class="whatsapp-btn" href="https://wa.me/2347061386314">Chat on WhatsApp</a>
+
+<footer>
+  &copy; 2025 Trackora. All rights reserved.
+</footer>
+
 </body>
 </html>
